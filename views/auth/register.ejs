@@ -1,0 +1,35 @@
+<img src="/images/haircut.png" alt="Flowers in Chania" width="150" height="150" >
+<div class="row" >
+
+  <div class="col s6 offset-s3 z-depth-1 " id="panell">
+    <h5 id="title">Register Form</h5>
+    <form method="POST" action="/register" id="myform_id">
+        <div class="input-field" id="name" >
+          <i class="material-icons prefix">account_circle</i>
+            <input  type="text" placeholder="username" name="name">
+            
+        </div>
+          <div class="input-field" id="email" >
+            <input  type="text" placeholder="email" name="email">
+            
+        </div>
+        <div class="input-field" id="mobno" >
+          <i class="material-icons prefix">phone</i>
+          <input  type="number" placeholder="mobile number" name="mobno">
+          
+      </div>
+        <div class="input-field" id="password" >
+            <input  type="text" placeholder="password" name="password">
+        </div>
+        <div class="input-field" id="password2" >
+            <input  type="text" placeholder="confirmpassword" name="password2">
+            
+        </div>
+        <input  type="hidden" name="role" value="client">
+        <a class="waves-effect waves-light btn deep-purple accent-3" id="loginbtn" href="javascript:$('#myform_id').submit();">Signup</a>
+        <p id="sub-text">Already have a account? <a href="/login">login</a></p>
+        <p id="sub-text">want to sell here? <a href="/farmerRegister">Farmer register</a></p>
+</form>
+</div> 
+</div>
+</div>
