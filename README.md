@@ -1,1 +1,1 @@
-A basic Farmers website to sell products
+A basic Salon website to book an appointment
