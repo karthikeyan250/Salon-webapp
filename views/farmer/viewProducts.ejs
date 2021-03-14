@@ -1,0 +1,20 @@
+<div class="row">
+	<body style="background-color:rgb(230,230,250);"></body>
+	<% products.forEach(product => { %>
+	<div class="col s6 m6 ">
+		<div class="card" >
+			<div class="card-image" >
+				<img src="/<%= product.img %>" style="height: 160px; width: 190px;" />
+				
+			</div>
+			<div class="card-content">
+				<p><%= product.name %> </p>
+				<p>price: <%= product.price %> </p>
+			</div>
+			<div class="card-action" style="text-align:center;color:blueviolet !important;">
+				<a href="/product/<%= product._id %>">more</a>
+			</div>
+		</div>
+	</div>
+	<% }) %>
+</div>
