@@ -1,0 +1,82 @@
+<img src="/images/haircut.png" alt="Flowers in Chania" width="150" height="150">
+
+
+
+<div
+	class="row"
+	style="justify-content: center; text-align: center; align-items: center; width: 700px; margin-top: 1px;"
+>
+	<div class="col s12" style="padding:0;">
+		<div class="card hoverable">
+			<div class="card-content z-depth-2">
+				<div class="card-title" style="text-align:center;color:blueviolet !important;"><b>Add your new service here </b></span>
+
+				<div class="row " style="margin: 0;">
+					<div
+						class="col s12 offset-s3"
+						id="panell"
+						style="margin: 0; padding:0"
+					>
+						<form
+							method="POST"
+							action="/addproduct"
+							id="myform2_id"
+							enctype="multipart/form-data"
+						>
+							<div class="input-field" id="productname">
+								<input
+									type="text"
+									placeholder="Enter your service name"
+									name="name"
+								/>
+							</div>
+							<div class="input-field" id="link">
+								<input
+									type="text"
+									placeholder="specs"
+									name="specs"
+								/>
+							</div>
+							<div class="input-field" id="price">
+								<input
+									type="text"
+									placeholder="price"
+									name="price"
+								/>
+							</div>
+
+							<div class="file-field input-field">
+								<i class="material-icons prefix">add_a_photo</i>
+								<div class="btn deep-purple accent-3">
+									<span>upload service image</span>
+									<input type="file" name="image" id="image" />
+								</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" type="text" />
+								</div>
+							</div>
+						</form>
+						<textarea
+							form="myform2_id"
+							name="desc"
+							id="taid"
+							cols="35"
+							wrap="soft"
+							placeholder="description about your service"
+						></textarea
+						><br /><br />
+
+						<a
+							class="waves-effect waves-light btn deep-purple accent-3"
+							id="loginbtn"
+							href="javascript:$('#myform2_id').submit();"
+						>
+							<i class="material-icons right">send</i>
+							submit
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
